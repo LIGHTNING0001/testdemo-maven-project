@@ -26,6 +26,7 @@ public class NotifyController {
         JSONObject msg = JSONObject.from(commonResp);
         //todo 解码
         log.info("收到的消息：==》" + msg.toString());
+
     }
 
 
