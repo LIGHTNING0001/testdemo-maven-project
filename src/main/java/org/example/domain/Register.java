@@ -7,6 +7,4 @@ public class Register {
     @Value("${spring.value}")
     public String value;
 
-
-
 }

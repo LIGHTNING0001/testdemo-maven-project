@@ -5,18 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f79027-e47e-4cd4-8ad2-e1e645c09c52" name="Changes" comment="add notify api">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/config/UrlConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/GenQRCodeReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/Memo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/PayType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/RsaUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/domain/testcases/PayApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/MethodEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/table/Merchant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/repository/MerchantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/ApiHttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/QRCodeFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/QRCodeFrameImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/QrcodeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-db.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/testcases/acquiring.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/domain/memo/WindowsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/repository/MerchantRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/ApiHttpClientTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/util/FileUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/config/UrlConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/config/UrlConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/NotifyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/NotifyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/CommonResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/CommonResp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/CommonResp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/CommonParam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/GenQRCodeReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/acquiring/GenQRCodeReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/util/RsaUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/util/RSAUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/domain/CommonRespTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/domain/CommonRespTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/domain/testcases/PayApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/domain/testcases/PayApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +42,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TestNG Test Class" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="TestNG Test Class" />
       </list>
     </option>
   </component>
@@ -36,10 +52,19 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/System.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/net/sourceforge/javacsv/javacsv/2.0/javacsv-2.0.jar!/com/csvreader/CsvReader.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/6.1.0-RC1/spring-core-6.1.0-RC1.jar!/org/springframework/core/annotation/Order.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -63,29 +88,40 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "TestNG",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG": "",
     "git-widget-placeholder": "test",
+    "last_opened_file_path": "/Users/lishanjie/IdeaProjects/testdemo-maven-project/src/main/resources/testcases",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "/Users/lishanjie/IdeaProjects/testdemo-maven-project/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "MavenSettings",
     "spring.configuration.checksum": "1de09039361ad10d4888c92286610a16",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/testcases" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.util" />
+      <recent name="org.example.repository" />
       <recent name="org.example.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
+  <component name="RunManager" selected="TestNG.ApiHttpClientTest.testDoPost">
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="testdemo-maven-project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.Main" />
@@ -93,17 +129,89 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CommonRespTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ApiHttpClientTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="testdemo-maven-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="PATTERN" value="org.example.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.domain" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.CommonRespTest" />
+      <option name="PACKAGE_NAME" value="org.example.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.ApiHttpClientTest" />
       <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiHttpClientTest.testDoPost" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testdemo-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.ApiHttpClientTest" />
+      <option name="METHOD_NAME" value="testDoPost" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileUtilTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testdemo-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.util" />
+      <option name="MAIN_CLASS_NAME" value="org.example.util.FileUtilTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowsTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testdemo-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.memo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain.memo" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.memo.WindowsTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowsTest.test1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testdemo-maven-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.memo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain.memo" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.memo.WindowsTest" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -113,7 +221,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CommonRespTest.test" />
+        <item itemvalue="TestNG.ApiHttpClientTest.testDoPost" />
+        <item itemvalue="TestNG.ApiHttpClientTest.test" />
+        <item itemvalue="TestNG.FileUtilTest.test" />
+        <item itemvalue="TestNG.WindowsTest.test1" />
+        <item itemvalue="TestNG.WindowsTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +240,13 @@
       <workItem from="1696946765814" duration="647000" />
       <workItem from="1697123820041" duration="2795000" />
       <workItem from="1697340894267" duration="5884000" />
-      <workItem from="1697468762713" duration="24513000" />
+      <workItem from="1697468762713" duration="27098000" />
+      <workItem from="1698072259669" duration="2409000" />
+      <workItem from="1698075071067" duration="1264000" />
+      <workItem from="1698153704228" duration="7112000" />
+      <workItem from="1698246135429" duration="9349000" />
+      <workItem from="1698542633986" duration="629000" />
+      <workItem from="1698543267888" duration="19352000" />
     </task>
     <task id="LOCAL-00001" summary="add notify api">
       <created>1697728733027</created>
@@ -154,7 +272,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="test" />
                       </list>
                     </value>
                   </entry>

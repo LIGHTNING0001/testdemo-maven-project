@@ -1,0 +1,2 @@
+merchantNo,subMerchantNo,transNo,payType,returnUrl,pageUrl,orderAmt,goodsInfo,requestDate,extend,reusePay,memo
+,,,DYNAMIC_ALL,http://,,1,测试产品,,,TRUE,

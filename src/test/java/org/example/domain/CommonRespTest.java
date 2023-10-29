@@ -9,7 +9,7 @@ public class CommonRespTest {
     @Test
     public void test(){
 
-        CommonResp commonResp = CommonResp.builder()
+        CommonParam commonResp = CommonParam.builder()
                 .format("json")
                 .merchantNo("xxx")
                 .method("xx")

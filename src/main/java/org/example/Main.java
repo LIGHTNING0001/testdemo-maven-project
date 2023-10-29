@@ -17,29 +17,20 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 
-@SpringBootConfiguration(proxyBeanMethods = false)
-@EnableAutoConfiguration
-@Import({ Register.class, MyRunner.class, NotifyController.class})
+//@SpringBootConfiguration(proxyBeanMethods = false)
+//@EnableAutoConfiguration
+//@Import({ Register.class, MyRunner.class, NotifyController.class})
+
+
+@EnableJpaAuditing
+@SpringBootApplication
 public class Main {
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
-
-//    @Bean
-//    public CommandLineRunner commandLineRunner(ApplicationContext ctx){
-//        return arg ->{
-//            String[] beanNames = ctx.getBeanDefinitionNames();
-//            Arrays.sort(beanNames);
-//            for (String beanName : beanNames) {
-//                System.out.println(beanName);
-//            }
-//            System.out.println("检测属性注入。。。");
-//            System.out.println(register.value);
-//        };
-//    }
-
 }

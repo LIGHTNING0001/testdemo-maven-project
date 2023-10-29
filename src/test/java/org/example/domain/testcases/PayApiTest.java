@@ -9,6 +9,9 @@ public class PayApiTest {
     @Test(description = "测试 - 商户系统先调用该接口在慧收钱支付服务后台生成预支付链接")
     void testPayLink(){
 
+        // 用户主扫
+
+
     }
 
 
@@ -16,11 +19,17 @@ public class PayApiTest {
     @Test(description = "测试 - 查询订单状态")
     void testPayOrderQuery(){
 
+        // 数据库查询订单号
+
+
+
     }
 
     @Order(2)
     @Test(description = "测试 - 交易回调")
     void testPayCallback(){
+
+
 
     }
 
@@ -28,6 +37,7 @@ public class PayApiTest {
     @Test(description = "测试 - 退款")
     void testRefund(){
 
+        
     }
 
     @Order(5)

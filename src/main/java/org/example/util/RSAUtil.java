@@ -14,7 +14,10 @@ import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
-public class RSAUtils {
+import org.apache.commons.codec.binary.Base64;
+
+
+public class RSAUtil {
 
     public static String RSA_ALGORITHM = "RSA";
     public static String UTF8 = "UTF-8";
@@ -30,11 +33,11 @@ public class RSAUtils {
         KeyStore keys = createKeys();
         byte[] publicKey = getPublicKey(keys);
         byte[] privateKey = getPrivateKey(keys);
-        System.out.println("公钥："+Base64.encode(publicKey));
-        System.out.println("私钥："+ Base64.encode(privateKey));
+        System.out.println("公钥："+Base64.encodeBase64(publicKey));
+        System.out.println("私钥："+ Base64.encodeBase64(privateKey));
 
         byte[] encryptByPublicKey = encryptByPublicKey(password.getBytes(), publicKey);
-        System.out.println("使用公钥加密后的数据："+Base64.encode(encryptByPublicKey));
+        System.out.println("使用公钥加密后的数据："+Base64.encodeBase64(encryptByPublicKey));
 
         byte[] decryptByPrivateKey = decryptByPrivateKey(encryptByPublicKey, privateKey);
         System.out.println("使用私钥解密后的数据："+new String(decryptByPrivateKey));
