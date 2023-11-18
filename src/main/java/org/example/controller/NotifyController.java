@@ -35,7 +35,6 @@ public class NotifyController {
     }
 
 
-
     @PostMapping("/notify")
     public void notify(@RequestBody CommonParam commonResp, HttpServletRequest request){
 

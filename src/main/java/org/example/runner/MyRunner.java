@@ -1,7 +1,10 @@
 package org.example.runner;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
+
+import java.util.concurrent.Callable;
 
 
 @Component
